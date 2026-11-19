@@ -3,115 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seatwork 2</title>
+    <title>Seatwork 2 - O.B. Montessori Center</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-     
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-      body {
-        margin: 0;
-        padding: 0;
-        background-color:beige; 
-        font-size: 20px;
-       
-      }
+        main {
+            flex: 1;
+        }
 
-       footer {
+        #navybary {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        #ob {
+            max-height: 300px;
+            object-fit: contain;
+        }
+
+        footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0px 0px;
-            background-color: rgba(43, 128, 177, 0.662);
-         }
-         
-        
-         .row{
-          position: relative;
-         }
-         
-         
-         #navybary{
-          box-shadow: 2px 2px 2px;
-         }
-         .table1{
-            width: 300px;
-         }
-         td{
-          padding:10px;
-          font-size: small;
-         }
-         #ob{
-          width: 5px;
-          height: 300px;
-         }
-         
+            padding: 15px 0;
+            background-color: rgba(43, 128, 177, 0.85);
+            color: white;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid" id="navybary">
-    <a class="navbar-brand" href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fPjyNg5xFEOtT5wBIhcsb3H__yQMgGnnE6Y-yCOr6VzFjiJQctV9dWo&s=10"  alt="oblogo" id="oblogo" class="rounded-circle" style="height: 60px; width: 60px;"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="https://obmontessori.edu.ph/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://obmontessori.edu.ph/advmontessoriway60th">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://obmontessori.edu.ph/contactus">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://obmontessori.edu.ph/fairview-admissions">Enroll</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-success" type="button">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-<header>
- 
-<div class="container-fluid m-0 p-0">
-    <div class="row justify-content-center">
-        <div class="col">
-            <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/7c5f2399-faf0-4b55-abef-0d5a936d20c5/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w" id="ob" class="img-fluid w-100 d-block" alt="ob">
-      
-<div class="row justify-content-center">
-            <div class="col-lg-8" id="table1">
-                <table class="table-bordered align middle p-3 text-center">
-                    <thead>
-                        <tr class="display-5" style="width: 2200px;">
-                            <td scope="col" style="width: 20%;">Campuses</td>
-                            <td scope="col" style="width: 25%;">Office Hours</td>
-                            <td scope="col" style="width: 25%;">Email</td>
-                            <td scope="col" style="width: 30%;">Mobile No.</td>
-                        </tr>
 
-                    </thead>
-                    <tbody> 
-                        <tr class="display-6">
-                            <td colspan="3">2:00 PM</td>
-                        </tr>
-
-                        <tr class="display-6">
-                            <td colpsan="2">Haunter Lane 6667 Lot 444 In the CR Outer Space</td>
-                            
-                            <td>RSVP: 6-6-6</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navybary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://obmontessori.edu.ph/">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fPjyNg5xFEOtT5wBIhcsb3H__yQMgGnnE6Y-yCOr6VzFjiJQctV9dWo&s=10" alt="OBMC Logo" id="oblogo" class="rounded-circle" style="height: 60px; width: 60px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://obmontessori.edu.ph/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://obmontessori.edu.ph/advmontessoriway60th">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://obmontessori.edu.ph/contactus">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://obmontessori.edu.ph/fairview-admissions">Enroll</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
-    </div>
-</div>
-<div>
-</header>
+    </nav>
+
+    <main class="container-fluid py-4">
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 col-md-10 text-center">
+                <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/7c5f2399-faf0-4b55-abef-0d5a936d20c5/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w" id="ob" class="img-fluid mx-auto d-block" alt="OBMC 60th Diamond Legacy Banner">
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="table-responsive">
+                    <table class="table table-bordered align-middle text-center bg-white shadow-sm">
+                        <thead class="table-primary">
+                            <tr>
+                                <th scope="col" style="width: 20%;">Campuses</th>
+                                <th scope="col" style="width: 25%;">Office Hours</th>
+                                <th scope="col" style="width: 28%;">Email</th>
+                                <th scope="col" style="width: 27%;">Mobile / Tel No.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Angeles</th>
+                                <td>Mon–Fri: 8:00 AM – 5:00 PM<br>Sat: 8:00 AM – 12:00 PM</td>
+                                <td>admissions_an@obmontessori.edu.ph</td>
+                                <td>+63 969 645 4495<br>+63 45 626 1189</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Fairview</th>
+                                <td>Mon–Fri: 8:00 AM – 3:00 PM</td>
+                                <td>admissions_fv@obmontessori.edu.ph</td>
+                                <td>+63 909 560 4067<br>+63 2 8461 7773</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Greenhills</th>
+                                <td>Mon–Fri: 8:00 AM – 5:00 PM<br>Sat: 8:00 AM – 12:00 PM</td>
+                                <td>admissions_gh@obmontessori.edu.ph</td>
+                                <td>+63 949 833 9286<br>+63 2 8722 9720</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Las Pinas</th>
+                                <td>Mon–Fri: 8:00 AM – 5:00 PM<br>Sat: 8:00 AM – 12:00 PM</td>
+                                <td>admissions_lp@obmontessori.edu.ph</td>
+                                <td>+63 936 098 2170<br>+63 2 8820 3011</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sta Ana</th>
+                                <td>Mon–Sat: 8:00 AM – 3:00 PM</td>
+                                <td>admissions_sa@obmontessori.edu.ph</td>
+                                <td>+63 927 838 7004<br>+63 2 8563 5356</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <div class="row justify-content-center mb-4">
+            <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+                <div class="card border-0 shadow-sm rounded-3 p-4 bg-white">
+                    <h2 class="text-center fw-normal mb-4">Contact Us</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label fs-6">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label fs-6">Email Address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label fs-6">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label fs-6">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Type your message here (eg: I would like to enroll my twins Jose David and Ulrich Ramos in OBMC)" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary w-100 py-2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p class="mb-0"> 2026 O.B. Montessori Center, Nico Criispino All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
